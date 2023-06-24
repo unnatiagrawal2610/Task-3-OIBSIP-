@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Temperature-Converter </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device.width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script> 
+    </head>
+    <body>
+        <div class="container">
+            <div class="temp-calculator">
+                <h2 class="title"> Temperature Converter </h2>
+                <form class="temp-value" id="myForm">
+                    <p> Value to Convert: </p>
+                    <input type="text" placeholder="0" id="input-value" name="value" />
+                </form>
+
+                <div id="degree">
+                    <span> <p> From </p>
+                    <select name="input" id="input">
+                        <option value="celsius"> Celsius (C) </option>
+                        <option value="fahrenheit"> fahrenheit (F) </option>
+                        <option value="kelvin"> kelvin (k) </option>
+                    </select></span>
+
+                    <span>
+                        <p>To</p>
+                        <select name="output" id="output">
+                            <option value="celsius"> Celsius (C) </option>
+                            <option value="fahrenheit"> fahrenheit (F) </option>
+                            <option value="kelvin"> kelvin (k) </option>
+                        </select>
+                    </span>
+                </div>
+
+                <div class="btn">
+                    <input type="reset" onclick="resetForm()" value="CLEAR"/>
+                    <input type="button" onclick="convertTemprature()" id="convert" value="CONVERT"/>
+                </div>
+
+                <div class="temp-value">
+                    <p id="ans"> Answer: </p>
+                    <input type="text" id="result" value=""/>
+                </div>
+            </div>
+        </div>
+        </body>
+        </html>

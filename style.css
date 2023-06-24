@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("D:/Oasis Internship/Temperature/bgg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    background: #eea23f;
+    display: flex;
+    height: 500px;
+    width: 450px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.temp-calculator{
+    width: 100%;
+    padding: 0 20px;
+    margin: 25px 0;
+}
+.title{
+    font-family: 'Caprasimo', cursive;
+    color: #0f2cec;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: .9rem;
+    text-transform: uppercase;
+}
+#temperature{
+    background: transparent no-repeat scroll -3;
+    color: #f10e0e;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 0;
+}
+.temp-value p{
+    font-size: 18px;
+    font-weight: 600;
+    align-items: center;
+    text-align: left;
+    padding: 10px 0;
+    flex-basis: 42%;
+}
+.temp-value input{
+    width: 100%;
+    border: 0;
+    outline: none;
+    font-size: 15px;
+    border-radius: 6px;
+    color:#ff004f
+    width:55%;
+    padding:10px;
+    flex-basis: 55%
+}
+#degree{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+#degree span{
+    flex-basis: 48%;
+}
+#degree span p{
+    font-size: 16px;
+    font-weight: 600;
+    align-items: center;
+    text-align: left;
+    padding: 5px 10px;
+}
+#degree span select{
+    width: 100%;
+    border: 0;
+    outline: none;
+    font-size : 15px;
+    font-weight: 600;
+    border-radius: 6px;
+    color: #282626;
+    background: #90afe9;
+    padding: 10px;
+    cursor: pointer;
+}
+.btn{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.btn input{
+    font-size: 16px;
+    background-color: #ff004f;
+    padding: 10px;
+    flex-basis: 45%;
+    color: #fff;
+    flex-wrap: wrap;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.temp-value #ans{
+    font-size: 16px;
+    font-weight: 600;
+    align-items: center;
+    text-align: left;
+    padding: 10px 0;
+    flex-basis: 25%;
+}
+.temp-value #result{
+    width: 100%;
+    border: 0;
+    outline: none;
+    font-size: 14px;
+    border-radius: 6px;
+    color: #181717;
+    background: #ebeef1c7;
+    width: 60%;
+    padding: 10px;
+    flex-basis: 70%;
+    cursor: default;
+    font-weight: 400;
+}
